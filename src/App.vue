@@ -3,6 +3,7 @@
   <the-form
     :results="results"
     @submit="submitForm"
+    @reset-values="resetValues"
   />
   <the-footer />
 </template>
@@ -19,8 +20,12 @@ const service = new SunsetSunriseService()
 
 const results = ref(null)
 
-const submitForm = async form => {
-    const response = await service.fetch({ type: form.type })
+const submitForm = async date => {
+    const response = await service.fetch(date)
     results.value = response
+}
+
+const resetValues = () => {
+    results.value = null
 }
 </script>

@@ -12,17 +12,17 @@ export default class SunsetSunriseService {
         this.lng = lng
     }
 
-    async fetch({ type }) {
-        const response = await this.api.get(`${this.baseUrl}lat=${this.lat}&lng=${this.lng}&date=1990-05-22`)
-        const { results } = response.data
+    async fetch(date) {
+        try {
+            const response = await this.api.get(`${this.baseUrl}lat=${this.lat}&lng=${this.lng}&date=${date}`)
+            const { results } = response.data
 
-        delete results.timezone
-        delete results.utc_offset
+            delete results.timezone
+            delete results.utc_offset
 
-        if (type) {
-            return { [type]: results[type] }
-        } else {
             return results
+        } catch (error) {
+            console.error(error)
         }
     }
 }

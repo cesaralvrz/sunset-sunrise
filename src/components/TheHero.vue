@@ -5,7 +5,7 @@
 				<h1 class="text-5xl font-bold leading-none sm:text-7xl">Sunrise & sunset
 					<span class="text-tgtg-secondary">calendar.</span>
 				</h1>
-				<p class="mt-6 mb-8 text-xl sm:mb-12">Select the dates to show sunrise & sunset.</p>
+				<p class="mt-6 mb-8 text-xl sm:mb-12">Select a date to show the hour of sunrise, sunset & more.</p>
 			</div>
 			<div class="flex items-center justify-center p-6 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 				<img src="../assets/calendar.png" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">

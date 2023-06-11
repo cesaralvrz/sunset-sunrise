@@ -13,4 +13,7 @@ export default defineConfig({
         },
         extensions: [".js", ".vue", ".json"]
     },
+    optimizeDeps: {
+        exclude: ['js-big-decimal']
+    }
 })
