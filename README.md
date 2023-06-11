@@ -1,6 +1,6 @@
 # Sunset and Sunrise Calendar ☀️
 
-Select a date to show the hour of sunrise, sunset & more. ([Demo]([https://sunrisesunset.io/api/](https://darling-pasca-c23e2a.netlify.app/)))
+Select a date to show the hour of sunrise, sunset & more. [App Demo](https://darling-pasca-c23e2a.netlify.app/)
 
 ![App Screenshot](https://i.imgur.com/aiU0OxX.png)
 
